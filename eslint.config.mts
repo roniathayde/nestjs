@@ -1,6 +1,6 @@
 import js from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
-import prettierPlugin from 'eslint-plugin-prettier'; // 1. Importe o plugin
+import prettierPlugin from 'eslint-plugin-prettier';
 import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
@@ -24,7 +24,6 @@ export default defineConfig([
 			'no-debugger': 'error',
 			'no-var': 'error',
 			'prefer-const': 'error',
-			eqeqeq: 'error',
 		},
 	},
 
