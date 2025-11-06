@@ -19,14 +19,12 @@ export default defineConfig([
 			globals: globals.node,
 		},
 		rules: {
-			// Regras de Qualidade (MANTENHA)
 			'no-console': ['warn', { allow: ['warn', 'error'] }],
 			'no-debugger': 'error',
 			'no-var': 'error',
 			'prefer-const': 'error',
 		},
 	},
-
 	// 5. Configuração do plugin do Prettier (Roda o Prettier como regra)
 	{
 		files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
