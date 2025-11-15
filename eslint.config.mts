@@ -23,6 +23,7 @@ export default defineConfig([
 			'no-debugger': 'error',
 			'no-var': 'error',
 			'prefer-const': 'error',
+			'@typescript-eslint/no-unused-vars': 'off'
 		},
 	},
 	// 5. Configuração do plugin do Prettier (Roda o Prettier como regra)
