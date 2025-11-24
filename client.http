@@ -1,3 +1,4 @@
+
 @baseUrl = http://localhost:3333
 @authToken = {{authenticate.response.body.accessToken}}
 
@@ -7,7 +8,7 @@ Content-Type: application/json
 # @name create_account
 {
     "name": "John Doe",
-    "email": "johndoe@example.com",
+    "email": "johndoe2@example.com",
     "password": "123456"
 }
 ### 
