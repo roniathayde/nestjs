@@ -1,5 +1,5 @@
 import { right, type Either } from '@/core/either'
-import type { AnswerComment } from '../../enterprise/entities/answer-comment'
+import { AnswerComment } from '../../enterprise/entities/answer-comment'
 import { AnswerCommentsRepository } from '../repositories/answer-comments-repository'
 
 interface FetchAnswerCommentsUseCaseRequest {
