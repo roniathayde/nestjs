@@ -49,7 +49,7 @@ describe(`Edit question`, () => {
 			authorId: `author-1`,
 			title: `Pergunta teste`,
 			content: `Conteudo teste`,
-			attachmentsIds: ['1', '3'],
+			attachmentIds: ['1', '3'],
 		})
 
 		expect(inMemoryQuestionsRepository.items[0]).toMatchObject({
@@ -82,7 +82,7 @@ describe(`Edit question`, () => {
 			authorId: `author-2`,
 			title: `pergunta teste`,
 			content: `conteudo teste`,
-			attachmentsIds: [],
+			attachmentIds: [],
 		})
 
 		expect(result.isLeft()).toEqual(true)

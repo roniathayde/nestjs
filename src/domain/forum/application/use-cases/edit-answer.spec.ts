@@ -47,7 +47,7 @@ describe(`Delete answer`, () => {
 			answerId: newAnswer.id.toString(),
 			authorId: `author-1`,
 			content: `Conteudo teste`,
-			attachmentsIds: ['1', '3'],
+			attachmentIds: ['1', '3'],
 		})
 
 		expect(inMemoryAnswersRepository.items[0]).toMatchObject({
@@ -78,7 +78,7 @@ describe(`Delete answer`, () => {
 			answerId: newAnswer.id.toString(),
 			authorId: `author-2`,
 			content: `conteudo teste`,
-			attachmentsIds: [],
+			attachmentIds: [],
 		})
 
 		expect(result.isLeft()).toEqual(true)

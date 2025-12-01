@@ -31,7 +31,7 @@ export class EditQuestionController {
 			title,
 			content,
 			authorId: userId,
-			attachmentsIds: [],
+			attachmentIds: [],
 			questionId,
 		})
 	}

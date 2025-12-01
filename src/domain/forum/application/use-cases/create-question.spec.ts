@@ -24,7 +24,7 @@ describe(`Create question`, () => {
 			authorId: `1`,
 			title: `Nova pergunta`,
 			content: `Conteudo da pergunta`,
-			attachmentsIds: ['1', '2'],
+			attachmentIds: ['1', '2'],
 		})
 
 		expect(result.isRight()).toEqual(true)

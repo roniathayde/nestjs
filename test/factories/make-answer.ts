@@ -6,7 +6,7 @@ import {
 	type AnswerProps,
 } from '@/domain/forum/enterprise/entities/answer'
 import { PrismaAnswerMapper } from '@/infra/database/prisma/mappers/prisma-answer-mapper'
-import type { PrismaService } from '@/infra/database/prisma/prisma.service'
+import { PrismaService } from '@/infra/database/prisma/prisma.service'
 import { Injectable } from '@nestjs/common'
 
 export function makeAnswer(

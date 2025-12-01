@@ -4,7 +4,7 @@ import {
 	type QuestionCommentProps,
 } from '@/domain/forum/enterprise/entities/question-comment'
 import { PrismaQuestionCommentMapper } from '@/infra/database/prisma/mappers/prisma-question-comment-mapper'
-import type { PrismaService } from '@/infra/database/prisma/prisma.service'
+import { PrismaService } from '@/infra/database/prisma/prisma.service'
 import { faker } from '@faker-js/faker'
 import { Injectable } from '@nestjs/common'
 
