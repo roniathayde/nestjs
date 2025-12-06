@@ -7,6 +7,7 @@ import z from 'zod'
 
 const answerQuestionBodySchema = z.object({
 	content: z.string(),
+	attachmentIds: z.array(z.uuid()),
 })
 
 type AnswerQuestionBodySchema = z.infer<typeof answerQuestionBodySchema>
@@ -22,14 +23,14 @@ export class AnswerQuestionController {
 		body: AnswerQuestionBodySchema,
 		@Param('questionId') questionId: string,
 	) {
-		const { content } = body
+		const { content, attachmentIds } = body
 		const userId = user.sub
 
 		await this.answerQuestion.execute({
 			content,
 			questionId,
 			authorId: userId,
-			attachmentIds: [],
+			attachmentIds,
 		})
 	}
 }

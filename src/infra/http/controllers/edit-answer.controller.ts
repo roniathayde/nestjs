@@ -7,6 +7,7 @@ import z from 'zod'
 
 const editAnswerBodySchema = z.object({
 	content: z.string(),
+	attachmentIds: z.array(z.uuid()).default([]),
 })
 
 type EditAnswerBodySchema = z.infer<typeof editAnswerBodySchema>
@@ -23,14 +24,14 @@ export class EditAnswerController {
 		body: EditAnswerBodySchema,
 		@Param('id') answerId: string,
 	) {
-		const { content } = body
+		const { content, attachmentIds } = body
 		const userId = user.sub
 
 		await this.editAnswerUseCase.execute({
 			answerId,
 			content,
 			authorId: userId,
-			attachmentIds: [],
+			attachmentIds,
 		})
 	}
 }
