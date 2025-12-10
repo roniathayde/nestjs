@@ -1,7 +1,7 @@
 import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import {
-    Attachment,
-    AttachmentProps,
+	Attachment,
+	AttachmentProps,
 } from '@/domain/forum/enterprise/entities/attachment'
 import { PrismaAttachmentMapper } from '@/infra/database/prisma/mappers/prisma-attachment-mapper'
 import { PrismaService } from '@/infra/database/prisma/prisma.service'
