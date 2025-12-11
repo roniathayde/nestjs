@@ -9,6 +9,9 @@ export const envSchema = z.object({
 	CLOUDFLARE_ACCOUNT_ID: z.string().min(1),
 	AWS_ACCESS_KEY_ID: z.string().min(1),
 	AWS_SECRET_KEY_ID: z.string().min(1),
+	REDIS_HOST: z.string().min(1).default('127.0.0.1'),
+	REDIS_DB: z.coerce.number().optional().default(0),
+	REDIS_PORT: z.coerce.number().optional().default(6379),
 })
 
 export type Env = z.infer<typeof envSchema>

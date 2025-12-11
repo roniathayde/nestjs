@@ -1,12 +1,12 @@
 import { ReadNotificationUseCase } from '@/domain/notification/application/use-cases/read-notification'
 import { CurrentUser } from '@/infra/auth/current-user.decorator'
-import { UserPayload } from '@/infra/auth/jwt.strategy'
+import type { UserPayload } from '@/infra/auth/jwt.strategy'
 import {
-  BadRequestException,
-  Controller,
-  HttpCode,
-  Param,
-  Patch,
+	BadRequestException,
+	Controller,
+	HttpCode,
+	Param,
+	Patch,
 } from '@nestjs/common'
 
 @Controller('/notifications/:notificationId/read')
